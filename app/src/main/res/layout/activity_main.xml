@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Translate"
+        android:textSize="25sp"
+        android:gravity="center_horizontal"/>
+    <EditText
+        android:id="@+id/InputText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Enter String to be Translated"/>
+    <Spinner
+        android:id="@+id/Target"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="40dp"
+        android:entries="@array/languages"/>
+    <Button
+        android:id="@+id/TranslateButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Translate"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:id="@+id/OutputText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:minHeight="40dp"
+        android:layout_margin="10dp"
+        android:hint="Translated string will appear here."
+        android:gravity="center_horizontal"
+        android:textSize="25dp"/>
+</LinearLayout>
